@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>奈飞免费cookies</title>
+
+	<style>
+
+		html, body {
+			padding: 0;
+			margin: 0;
+		}
+		header {
+			text-align: center;
+			font-weight: bold;
+			font-size: 14px;
+			background: #f9f9f9;
+			border-bottom: 1px #ccc solid;
+			padding: 10px;
+			width: 100%;
+		}
+
+		.main {
+			padding: 10px 10px 20px 10px;
+		}
+
+		.box {
+			padding: 10px 0;
+			/*text-align: center;*/
+		}
+
+		footer {
+			width: 100%;
+			height: 30px;
+			padding: 10px 10px 20px 10px;
+			background: #f9f9f9;
+		}
+
+		footer .title {
+			font-weight: bold;
+			padding-bottom: 5px;
+		}
+
+		footer li {
+			float: left;
+			list-style: none;
+			margin-right: 10px;
+		}
+
+		.button {
+			border: none;
+			color: white;
+			padding: 10px;
+
+			text-align: center;
+			text-decoration: none;
+			font-size: 14px;
+			rgba(0,0,0,0.19);
+			cursor: pointer;
+		}
+
+		.login {
+			background-color: #4CAF50; /* Green */
+		}
+
+		.signout {
+			background-color: #f00; /* Green */
+		}
+		.button:hover {
+			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0
+		}
+
+		#token {
+			outline: none;
+			padding: 10px;
+			font-size: 14px;
+			width: 150px;
+			margin-bottom: 10px;
+		}
+
+	</style>
+</head>
+<body style="min-width:300px;min-height:100px;">
+
+<header>奈飞小铺-免费Cookies</header>
+
+<div class="main">
+	<p>使用说明：</p>
+	<p>1，cookie后台动态自动更新（半个小时更新一次），如果暂时不可用，可稍后再试。<br>
+		2，后台自动分配cookie如遇观看人数过多，请重复点击几次"免费观看"，如果重复多次依旧无法观看，可能当前观看人数太多，账号不够用。
+	</p>
+
+	<div class="box">
+		<p>
+			<input id="token" type="text" placeholder="请先免费领取激活码">
+			<button id="tg" class="button login">领取激活码</button>
+		</p>
+		<button id="open" class="button login">免费观看</button>
+		<button id="out" class="button signout">退出登陆</button>
+	</div>
+</div>
+
+<footer>
+	<div class="title">特别鸣谢</div>
+	<li><a id="naifei_shop" href="https://naifei.shop">奈飞小铺</a></li>
+	<li><a id="jc" href="https://api.naifei.shop/cookies/jc">JC-Netflix</a></li>
+	<li><a id="bo" href="https://api.naifei.shop/cookies/bo">波仔分享</a></li>
+</footer>
+
+	<script type="text/javascript" src="js/jquery-1.2.4.min.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+	<script type="text/javascript" src="js/inject.js"></script>
+</body>
+</html>
